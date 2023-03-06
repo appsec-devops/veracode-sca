@@ -18,7 +18,7 @@ jobs:
         uses: actions/checkout@v2
       - name: Run Veracode SCA
         env:
-          SRCCLR_API_TOKEN: fc1ad0b0-48aa-4282-b55f-9b07f1f97b08
+          SRCCLR_API_TOKEN: ${{ secrets.SRCCLR_API_TOKEN }}
         uses: ./
         with:
           github_token: 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
